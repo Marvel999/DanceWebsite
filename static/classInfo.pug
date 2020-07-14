@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+  head
+    title= DanceIndiaDance
+    style
+        include classInfoStyle.css
+
+  body
+    nav#navigation
+       ul
+            div#logo
+               a(href="/") #[img(src="../static/logo.png", alt="")]
+                
+            li #[a(href="/").text  Home]            
+            li #[a(href="/service").text Service]            
+            li #[a(href="/about").text About Us]            
+            li #[a(href="/classInfo")#current Class info]          
+            li #[a(href="/contact").text Contect Us]          
+    section#picture
+        div
+            h1 Class Info
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci iusto quas reiciendis quae repellendus tempora aut odit, tenetur corporis voluptatibus atque maxime dolorum? Iste sit esse itaque delectus voluptatum fugiat.
+    
+    
+   
+    section#BigFotter
+        dir#contact
+            img(src="../static/logo.png", alt="")
+            p D-27, 
+            p Yadav Nagar, Delhi:-110042
+            p Manish Singh(Director)
+            p +91 9990147259 
+            p +91 9313597540
+
+    
+        dir#qickLink
+           a(href="/") Home
+           a(href="/service") Service
+           a(href="/about") About Us
+           a(href="/classInfo") Class Info
+           a(href="/contact") Contact Us
+
+
+    
+        dir#Quire
+           form(action="/quire" method="post")
+                input(type="text" name="email" id="email" placeholder="Email id*")
+                textarea(name="massage", cols="30", rows="10", id="email", placeholder="Message*")
+                input(type="submit", value="Send", id="sendbtn")
+
+
+    section#footer
+        | Copyright © 2020 ManishDanceAcademy All right | reserved
+
+    
+    script

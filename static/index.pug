@@ -1,0 +1,91 @@
+doctype html
+html(lang="en")
+  head
+    title= DanceIndiaDance
+    style
+        include style.css
+
+  body
+    nav#navigation
+       ul
+            div#logo
+               a(href="/") #[img(src="../static/logo.png", alt="")]
+                
+            li #[a(href="/")#current Home]            
+            li #[a(href="/service").text Service]            
+            li #[a(href="/about").text About Us]            
+            li #[a(href="/classInfo").text Class info]          
+            li #[a(href="/contact").text Contect Us]          
+    section#picture
+        div
+            | Welcome To Dance Academy
+        div    
+            | Dance Eat Sleep!, Dance Eat Sleep! 
+    
+    section#mission
+        h2 Our Mission
+        div.card
+           h5 Perfection in dance
+           div.card-box
+                div.card-img
+                    img(src="../static/card1.png")
+                div.card-contant    
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam non quas, ducimus, perferendis.
+               
+        div.card
+            h5 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="../static/card2.png")
+                div.card-contant    
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam non quas, ducimus, perferendis.
+
+        div.card
+            h5 Expart Teaching
+            div.card-box
+                div.card-img
+                    img(src="../static/card3.png")
+                div.card-contant    
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam non quas, ducimus, perferendis.
+
+    section#sponsor
+        h2 Our Sponsor
+        div#splogo
+            img(src="../static/sp1.png", alt="")
+            img(src="../static/sp2.png", alt="")
+            img(src="../static/sp3.png", alt="")
+            img(src="../static/sp4.png", alt="")
+    
+    
+    section#BigFotter
+        dir#contact
+            img(src="../static/logo.png", alt="")
+            p D-27, 
+            p Yadav Nagar, Delhi:-110042
+            p Manish Singh(Director)
+            p +91 9990147259 
+            p +91 9313597540
+
+    
+        dir#qickLink
+           a(href="/") Home
+           a(href="/service") Service
+           a(href="/about") About Us
+           a(href="/classInfo") Class Info
+           a(href="/contact") Contact Us
+
+
+    
+        dir#Quire
+           form(action="/quire" method="post")
+                input(type="text" name="email" id="email" placeholder="Email id*")
+                textarea(name="massage", cols="30", rows="10", id="email", placeholder="Message*")
+                input(type="submit", value="Send", id="sendbtn")
+
+
+   
+    section#footer
+        | Copyright © 2020 ManishDanceAcademy All right | reserved
+
+    
+    script

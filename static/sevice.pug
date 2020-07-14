@@ -1,0 +1,135 @@
+doctype html
+html(lang="en")
+  head
+    title= DanceIndiaDance
+    style
+        include serviceStyle.css
+
+  body
+    nav#navigation
+       ul
+            div#logo
+               a(href="/") #[img(src="../static/logo.png", alt="")]
+                
+            li #[a(href="/").text  Home]            
+            li #[a(href="/service")#current Service]            
+            li #[a(href="/about").text About Us]            
+            li #[a(href="/classInfo").text Class info]          
+            li #[a(href="/contact").text Contect Us]          
+    section#picture
+         div
+            h1 Mda Services
+            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus aut, quae eligendi esse assumenda incidunt asperiores doloribus maiores, optio culpa dolores earum natus deleniti id, porro expedita animi labore minus.   
+    
+    section#mission
+        h2 Dance Classes
+        div.card
+           h5 wedding dress crash course
+           div.card-box
+                div.card-img
+                    img(src="../static/card1.png")
+                div.card-contant    
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam non quas, ducimus, perferendis.
+               
+        div.card
+            h5 Online Classes
+            div.card-box
+                div.card-img
+                    img(src="../static/card2.png")
+                div.card-contant    
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam non quas, ducimus, perferendis.
+
+        div.card
+            h5 Learn Dance On your Place
+            div.card-box
+                div.card-img
+                    img(src="../static/card3.png")
+                div.card-contant    
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam non quas, ducimus, perferendis.
+
+    //-  city 
+    section#city
+        h2 Available city
+        div.card
+           h5 Delhi
+           div.card-box
+                div.card-img
+                    img(src="../static/card1.png")
+                div.card-contant    
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam non quas, ducimus, perferendis.
+               
+        div.card
+            h5 Mumbai
+            div.card-box
+                div.card-img
+                    img(src="../static/card2.png")
+                div.card-contant    
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam non quas, ducimus, perferendis.
+
+        div.card
+            h5 patna
+            div.card-box
+                div.card-img
+                    img(src="../static/card3.png")
+                div.card-contant    
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam non quas, ducimus, perferendis.
+        div.card
+            h5 Hyderabad
+            div.card-box
+                div.card-img
+                    img(src="../static/card3.png")
+                div.card-contant    
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam non quas, ducimus, perferendis.
+        div.card
+            h5 Rajasthan
+            div.card-box
+                div.card-img
+                    img(src="../static/card3.png")
+                div.card-contant    
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam non quas, ducimus, perferendis.
+
+        div.card
+            h5 Goa
+            div.card-box
+                div.card-img
+                    img(src="../static/card3.png")
+                div.card-contant    
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quam non quas, ducimus, perferendis.
+
+   
+
+
+    section#BigFotter
+        dir#contact
+            img(src="../static/logo.png", alt="")
+            p D-27, 
+            p Yadav Nagar, Delhi:-110042
+            p Manish Singh(Director)
+            p +91 9990147259 
+            p +91 9313597540
+
+    
+        dir#qickLink
+           a(href="/") Home
+           a(href="/service") Service
+           a(href="/about") About Us
+           a(href="/classInfo") Class Info
+           a(href="/contact") Contact Us
+
+
+    
+        dir#Quire
+           form(action="/quire" method="post")
+                input(type="text" name="email" id="email" placeholder="Email id*")
+                textarea(name="massage", cols="30", rows="10", id="email", placeholder="Message*")
+                input(type="submit", value="Send", id="sendbtn")
+
+
+            
+
+    
+    section#footer
+        | Copyright © 2020 ManishDanceAcademy All right | reserved
+
+    
+    script
